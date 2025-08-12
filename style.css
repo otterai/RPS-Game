@@ -90,35 +90,51 @@ animation: shakePlayer 0.8s linear;
     margin: 5px;
 }
 
+
+
+/* Game option buttons */
 .options button {
-background: none;
-color: #fff;
-font-family: "Poppins";
-border: 1px solid #fff;
-padding: 1em 2em;
-border-radius: 7px;
-width: 150px;
-white-space: nowrap;
-cursor: pointer;
-outline: none;
-transition: 0.2s all linear;
-margin: 5px;
+    background: none;
+    color: #fff;
+    font-family: "Poppins";
+    font-weight: bold; /* bold text */
+    border: 1px solid #fff;
+    padding: 1em 2em;
+    border-radius: 7px;
+    width: 150px;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none;
+    margin: 5px;
+    transition: 0.3s ease all;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.4); /* glow */
 }
 
 .options button:hover {
-background: #fff;
-color: #000;
+    background: #fff;
+    color: #000;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+    transform: scale(1.05); /* thoda zoom */
 }
 
+/* Play Again button */
 #play-again {
-background: none;
-color: #fff;
-border: 1px solid #fff;
-padding: 0.7em 1.5em;
-border-radius: 5px;
-cursor: pointer;
-margin-top: 10px;
-display: none;
+    background: none;
+    color: #fff;
+    font-weight: bold; /* bold text */
+    border: 1px solid #fff;
+    padding: 0.7em 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: none;
+    transition: 0.3s ease all;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.4); /* glow */
 }
 
-
+#play-again:hover {
+    background: #fff;
+    color: #000;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+    transform: scale(1.05);
+}
