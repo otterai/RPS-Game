@@ -49,8 +49,22 @@ animation: shakePlayer 0.8s linear;
 }
 
 .points {
-margin: 2em 0;
-text-align: center;
+    margin: 2em 0;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#win-count { 
+    color: limegreen;   /* jeet ka green */
+}
+
+#lose-count { 
+    color: red;         /* haar ka red */
+}
+
+#draw-count { 
+    color: gold;        /* draw ka golden */
 }
 
 .options button {
