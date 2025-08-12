@@ -28,8 +28,12 @@ function playGame(playerChoice) {
 }
 
 function checkWinner(player, computer) {
+    // Remove any previous glow classes
+    resultText.classList.remove('glow-green', 'glow-red', 'glow-gold');
+
     if (player === computer) {
         resultText.innerText = "It's a Draw!";
+        resultText.classList.add('glow-gold');
         drawCount++;
     } else if (
         (player === "rock" && computer === "scissors") ||
@@ -37,13 +41,16 @@ function checkWinner(player, computer) {
         (player === "scissors" && computer === "paper")
     ) {
         resultText.innerText = "You Won!";
+        resultText.classList.add('glow-green');
         winCount++;
     } else {
         resultText.innerText = "You Lost!";
+        resultText.classList.add('glow-red');
         loseCount++;
     }
     updateScore();
 }
+
 
 function updateScore() {
     document.getElementById("win-count").innerText = winCount;
