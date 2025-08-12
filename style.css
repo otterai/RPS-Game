@@ -1,0 +1,85 @@
+body {
+    background: #2b2b2b;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.game-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+}
+
+.hands {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.hands img {
+    width: 100px;
+}
+
+.shakeComputer {
+    animation: shakeComputer 0.8s linear;
+}
+
+.shakePlayer {
+    animation: shakePlayer 0.8s linear;
+}
+
+@keyframes shakeComputer {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(20deg); }
+    50% { transform: rotate(-20deg); }
+    75% { transform: rotate(20deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes shakePlayer {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-20deg); }
+    50% { transform: rotate(20deg); }
+    75% { transform: rotate(-20deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.points {
+    margin: 2em 0;
+    text-align: center;
+}
+
+.options button {
+    background: none;
+    color: #fff;
+    font-family: "Poppins";
+    border: 1px solid #fff;
+    padding: 1em 2em;
+    border-radius: 7px;
+    width: 150px;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s all linear;
+    margin: 5px;
+}
+
+.options button:hover {
+    background: #fff;
+    color: #000;
+}
+
+#play-again {
+    background: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 0.7em 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: none;
+}
