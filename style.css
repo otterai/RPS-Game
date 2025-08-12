@@ -1,6 +1,6 @@
 body {
-    background: #2b2b2b;
-    color: white;
+    background: #0d0d0d; /* Pure dark background */
+    color: #ffffff;
     font-family: 'Poppins', sans-serif;
     text-align: center;
     margin: 0;
@@ -13,73 +13,50 @@ body {
     padding: 20px;
 }
 
-.hands {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px 0;
-}
-
 .hands img {
     width: 100px;
-}
-
-.shakeComputer {
-    animation: shakeComputer 0.8s linear;
-}
-
-.shakePlayer {
-    animation: shakePlayer 0.8s linear;
-}
-
-@keyframes shakeComputer {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(20deg); }
-    50% { transform: rotate(-20deg); }
-    75% { transform: rotate(20deg); }
-    100% { transform: rotate(0deg); }
-}
-
-@keyframes shakePlayer {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(-20deg); }
-    50% { transform: rotate(20deg); }
-    75% { transform: rotate(-20deg); }
-    100% { transform: rotate(0deg); }
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2)); /* Subtle glow */
 }
 
 .points {
     margin: 2em 0;
     text-align: center;
+    color: #ccc;
 }
 
 .options button {
-    background: none;
+    background: #1a1a1a;
     color: #fff;
     font-family: "Poppins";
-    border: 1px solid #fff;
+    border: 1px solid #444;
     padding: 1em 2em;
     border-radius: 7px;
     width: 150px;
     white-space: nowrap;
     cursor: pointer;
     outline: none;
-    transition: 0.2s all linear;
+    transition: all 0.2s linear;
     margin: 5px;
 }
 
 .options button:hover {
-    background: #fff;
-    color: #000;
+    background: #333;
+    border-color: #888;
+    transform: scale(1.05);
 }
 
 #play-again {
-    background: none;
+    background: #1a1a1a;
     color: #fff;
-    border: 1px solid #fff;
+    border: 1px solid #444;
     padding: 0.7em 1.5em;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
     display: none;
+}
+
+#play-again:hover {
+    background: #333;
+    border-color: #888;
 }
