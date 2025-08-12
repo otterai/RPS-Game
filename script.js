@@ -18,8 +18,9 @@ function playGame(playerChoice) {
         playerHand.classList.remove("shakePlayer");
         computerHand.classList.remove("shakeComputer");
 
-        playerHand.src = `${playerChoice}.png`;
-        computerHand.src = `${computerChoice}.png`;
+        // Path fix kiya
+        playerHand.src = `images/${playerChoice}.png`;
+        computerHand.src = `images/${computerChoice}.png`;
 
         checkWinner(playerChoice, computerChoice);
         document.getElementById("play-again").style.display = "inline-block";
@@ -52,7 +53,7 @@ function updateScore() {
 
 function resetGame() {
     resultText.innerText = "Make Your Move!";
-    playerHand.src = "rock.png";
-    computerHand.src = "rock.png";
+    playerHand.src = "images/rock.png"; // Path fix kiya
+    computerHand.src = "images/rock.png"; // Path fix kiya
     document.getElementById("play-again").style.display = "none";
 }
