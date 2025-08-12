@@ -48,23 +48,46 @@ animation: shakePlayer 0.8s linear;
 100% { transform: rotate(0deg); }
 }
 
-.points {
-    margin: 2em 0;
+/* Score box style */
+.score-box {
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #222; /* Dark background */
+    border-radius: 10px;
     text-align: center;
+    width: fit-content;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Points style */
+.points {
     font-weight: bold;
     font-style: italic;
+    font-size: 18px;
 }
 
-#win-count { 
-    color: limegreen;   /* jeet ka green */
+/* Individual colors */
+#win-count {
+    color: limegreen;
 }
 
-#lose-count { 
-    color: red;         /* haar ka red */
+#lose-count {
+    color: red;
 }
 
-#draw-count { 
-    color: gold;        /* draw ka golden */
+#draw-count {
+    color: gold;
+}
+
+/* Telegram button container */
+.telegram-links {
+    margin-top: 10px;
+}
+
+/* Telegram buttons inline */
+.telegram-links a {
+    display: inline-block;
+    margin: 5px;
 }
 
 .options button {
